@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hamiltonian-modal"
+version = "0.1.0"
+description = "End-to-end differentiable Hamiltonian-modal foundation policies for humanoid robots"
+readme = "README.md"
+license = { text = "Apache-2.0" }
+requires-python = ">=3.10,<3.13"
+authors = [{ name = "Hamiltonian Modal Contributors", email = "maintainers@example.com" }]
+dependencies = ["numpy>=1.26.0,<2.0"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.2.0"]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["hamiltonian_modal*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = "test_*.py"
