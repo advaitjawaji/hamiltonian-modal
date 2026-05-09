@@ -46,7 +46,7 @@ def test_load_g1_model_with_explicit_urdf_uses_pinocchio(monkeypatch: pytest.Mon
     assert isinstance(data, _FakeData)
 
 
-def test_mass_matrix_pd(monkeypatch: pytest.MonkeyPatch) -> None:
+def test_mass_matrix_is_symmetric_positive_definite(monkeypatch: pytest.MonkeyPatch) -> None:
     _install_fake_pinocchio(monkeypatch)
     model = _FakeModel(nq=3, nv=3)
     data = _FakeData()
@@ -62,4 +62,3 @@ def test_mass_matrix_rejects_wrong_q_size(monkeypatch: pytest.MonkeyPatch) -> No
     data = _FakeData()
     with pytest.raises(ValueError, match="Expected q with size 3"):
         mass_matrix_at(model, data, q=np.array([0.1, 0.2]))
-
