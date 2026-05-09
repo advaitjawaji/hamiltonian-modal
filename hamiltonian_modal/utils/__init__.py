@@ -1,2 +1,1 @@
-"""Utility wrappers for third-party robotics libraries."""
-
+"""Utility helpers for Hamiltonian Modal."""
