@@ -1,0 +1,5 @@
+dt: 0.01
+max_steps: 1000
+n_envs: 1
+requires_grad: false
+target_velocity: 1.0

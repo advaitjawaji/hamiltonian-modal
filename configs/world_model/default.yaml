@@ -1,0 +1,13 @@
+n_modes: 20
+n_contact_modes: 5
+n_iterations: 100000
+batch_size: 256
+learning_rate: 3.0e-4
+grad_clip: 1.0
+sequence_length: 50
+quantile_loss_weight: 0.1
+contact_event_loss_weight: 0.5
+energy_conservation_loss_weight: 0.01
+seed: 42
+v_hidden: [256, 256, 256, 256]
+contact_hidden: [128, 128, 128]

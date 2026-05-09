@@ -1,0 +1,4 @@
+type: mlp
+hidden: [256, 256, 256]
+activation: tanh
+seed: 42

@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+wandb/
+data/checkpoints/
+data/*/raw/
+.venv/
+dist/
+build/
+.DS_Store
+.idea/
+.vscode/
+*.swp
+outputs/
+*.npz

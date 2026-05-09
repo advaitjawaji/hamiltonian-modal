@@ -1,0 +1,4 @@
+type: ilqr
+horizon: 20
+n_iterations: 10
+regularization: 1.0e-4
